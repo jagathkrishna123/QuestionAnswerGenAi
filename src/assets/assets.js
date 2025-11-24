@@ -69,12 +69,19 @@ import vanilla_muffins_image from "./vanilla_muffins_image.png";
 import quinoa_image from "./quinoa_image.png";
 import brown_rice_image from "./brown_rice_image.png";
 import barley_image from "./barley_image.png";
-import syllabus1 from "../assets/syllabus1.pdf"
-import syllabus2 from "../assets/syllabus2.pdf"
-import syllabus3 from "../assets/syllabus3.pdf"
-import syllabus4 from "../assets/syllabus4.pdf"
-import syllabus5 from "../assets/syllabus5.pdf"
-import syllabus7 from "../assets/syllabus7.pdf"
+// import syllabus1 from "../assets/syllabus1.pdf"
+// import syllabus2 from "../assets/syllabus2.pdf"
+// import syllabus3 from "../assets/syllabus3.pdf"
+// import syllabus4 from "../assets/syllabus4.pdf"
+// import syllabus5 from "../assets/syllabus5.pdf"
+// import syllabus7 from "../assets/syllabus7.pdf"
+const syllabus1 = new URL("../assets/syllabus1.pdf", import.meta.url).href;
+const syllabus2 = new URL("../assets/syllabus2.pdf", import.meta.url).href;
+const syllabus3 = new URL("../assets/syllabus3.pdf", import.meta.url).href;
+const syllabus4 = new URL("../assets/syllabus4.pdf", import.meta.url).href;
+const syllabus5 = new URL("../assets/syllabus5.pdf", import.meta.url).href;
+const syllabus7 = new URL("../assets/syllabus7.pdf", import.meta.url).href;
+
 
 export const assets = {
   logo,
@@ -851,34 +858,10 @@ export const dummyOrders = [
 export const DEPARTMENTCATEGORIES = ['All', 'BCA', 'BSC', 'B.COM', 'BBA']
 
 export const DOCUMENTDATA = [
-  {
-    _id:1,
-    file:syllabus1,
-    department: 'BCA'
-  },
-  {
-    _id:2,
-    file:syllabus2,
-    department: 'BSC'
-  },
-  {
-    _id:3,
-    file:syllabus3,
-    department: 'B.COM'
-  },
-  {
-    _id:4,
-    file:syllabus4,
-    department: 'BCA'
-  },
-  {
-    _id:5,
-    file:syllabus5,
-    department: 'BBA'
-  },
-  {
-    _id:6,
-    file:syllabus7,
-    department: 'BCA'
-  },
-]
+  { _id: 1, file: syllabus1, department: "BCA", semester: "1st sem" },
+  { _id: 2, file: syllabus2, department: "BSC" , semester: "4th sem" },
+  { _id: 3, file: syllabus3, department: "B.COM" , semester: "3rd sem" },
+  { _id: 4, file: syllabus4, department: "BCA" , semester: "5st sem" },
+  { _id: 5, file: syllabus5, department: "BBA" , semester: "2nd sem" },
+  { _id: 6, file: syllabus7, department: "BCA" , semester: "1st sem" },
+];
