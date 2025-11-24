@@ -107,20 +107,20 @@ const TrustedBy = () => {
   return (
     <div className="flex flex-col w-full min-h-[280px] rounded-xl bg-gradient-to-r from-[#d7eaff] via-[#b5d9ff] to-[#8bc8ff] p-4 shadow-xl items-center justify-center gap-6">
       <div className='flex flex-col p-6 text-center gap-2'>
-        <p className='text-gray-700 text-3xl font-medium'>
+        <p className='text-gray-700 text-3xl md:text-3xl font-medium'>
           Trusted by <span className='text-blue-600 font-bold'>500+</span> users
         </p>
-        <p className='text-gray-700 text-[18px]'>
+        <p className='text-gray-600 text-[15px] md:text-[18px]'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores veritat
         </p>
       </div>
       <div className='flex flex-row items-center justify-center gap-[30px]'>
         {achievements.map((a, i) => (
           <div key={i} className='flex flex-col text-center'>
-            <p className='text-blue-700 text-3xl font-bold'>
+            <p className='text-blue-700 text-2xl md:text-3xl font-bold'>
               {formatNumber(counts[i])}
             </p>
-            <p className='text-lg text-gray-600'>{a.label}</p>
+            <p className='text-xs md:text-lg text-gray-600'>{a.label}</p>
           </div>
         ))}
       </div>
