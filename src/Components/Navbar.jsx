@@ -144,8 +144,8 @@ const Navbar = () => {
             {/* Desktop Menu */}
             <div className="hidden sm:flex items-center gap-8 text-blue-900">
                 <NavLink to='/'>Home</NavLink>
-                <NavLink to='/'>About</NavLink>
-                <NavLink to='/'>About</NavLink>
+                <NavLink to='/about'>About</NavLink>
+                <NavLink to='/about2'>syllabus</NavLink>
                 <NavLink to='/'>Contact us</NavLink>
                 {user && 
                     <NavLink to='/'>My files</NavLink>

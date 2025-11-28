@@ -865,3 +865,10 @@ export const DOCUMENTDATA = [
   { _id: 5, file: syllabus5, department: "BBA" , semester: "2nd sem" },
   { _id: 6, file: syllabus7, department: "BCA" , semester: "1st sem" },
 ];
+
+export const admindashboard_data = {
+    "users": 10,
+    "filesGenerated": 5,
+    "Feedbacks": 0,
+    // "recent files": blog_data.slice(0, 5),
+}
