@@ -6,7 +6,7 @@ import Testimonials from '../Components/Testimonials'
 
 const Home = () => {
   return (
-    <div className='mt-10'>
+    <div className='mt-2'>
         <MainBanner/>
         <SyllabusList/>
         <TrustedBy/>

@@ -35,6 +35,10 @@ const Sidebar = () => {
             <VscOpenPreview />
             <p className='hidden md:inline-block text-gray-700'>All User Reviews</p>
         </NavLink>
+        <NavLink  to='/admin/manageuser' className={({isActive})=> `flex items-center gap-3 py-3.5 px-3 md:px-9 md:min-w-64 cursor-pointer ${isActive && "bg-blue-300 border-r-4 border-primary"}`}>
+            <VscOpenPreview />
+            <p className='hidden md:inline-block text-gray-700'>Manage users</p>
+        </NavLink>
     </div>
   )
 }

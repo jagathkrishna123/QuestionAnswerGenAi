@@ -13,6 +13,8 @@ import AddDepartment from './allpages/admin/AddDepartment'
 import AddNotification from './allpages/admin/AddNotification'
 import AllReviews from './allpages/admin/AllReviews'
 import AdminDashboard from './allpages/admin/AdminDashboard'
+import UserDashboard from './Components/UserDashboard'
+import ManageUser from './allpages/admin/ManageUser'
 
 const App = () => {
   const isAdminPath = useLocation().pathname.includes("admin")
@@ -22,10 +24,11 @@ const App = () => {
       {isAdminPath ? null : <Navbar/>}
       {showUserLogin ? <Login/> : null}
       
-      <div className={`${isAdminPath ? "" : "px-6 md:px-16 lg:px-24 xl:px-32"}`}>
+      <div className={`${isAdminPath ? "" : ""}`}>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<Aboutus/>}/>
+          <Route path='/userdashboard' element={<UserDashboard/>}/>
           <Route path='/about2' element={<Aboutus2/>}/>
           <Route path='/admin' element={true ? <Layout/> : <Login/>}>
             <Route index element={<AdminDashboard/>}/>
@@ -33,6 +36,7 @@ const App = () => {
             <Route path='addDepartment' element={<AddDepartment/>}/>
             <Route path='addNotification' element={<AddNotification/>}/>
             <Route path='reviews' element={<AllReviews/>}/>
+            <Route path='manageuser' element={<ManageUser/>}/>
          </Route>
         </Routes>
       </div>
